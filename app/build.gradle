@@ -5,6 +5,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\lenovo\\Desktop\\Developments\\ANDROID-STUDIO\\Tools\\MyKeyStore\\keystore.jks')
+            storePassword 'Nurlisa_2311'
+            keyAlias 'keymyapp'
+            keyPassword 'Nurlisa_2311'
+        }
+    }
     namespace 'com.example.myauthenticationapplication'
     compileSdk 33
 
@@ -16,6 +24,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
     }
 
     buildTypes {
@@ -46,4 +55,7 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:31.3.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-auth-ktx'
+
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+
 }

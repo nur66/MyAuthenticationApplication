@@ -56,6 +56,17 @@
             android:backgroundTint="@color/purple_700"
             android:textColor="@color/white"
             android:text="Login Sekarang"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btn_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            android:text="Login dengan google"
+            android:textAllCaps="false"
             android:layout_marginTop="20dp"/>
 
         <TextView
@@ -72,6 +83,7 @@
             android:backgroundTint="@color/black"
             android:textColor="@color/white"
             android:text="Daftar Sekarang"
+            android:textAllCaps="false"
             android:layout_marginTop="20dp" />
 
     </LinearLayout>
